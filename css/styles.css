@@ -1,5 +1,58 @@
+:root {
+    --bg-color: #000000;
+    --second-bg-color: #03A63C;
+    --text-color: #ffffff;
+    --second-text-color: #8dd8ce;
+    --terciary-bg-color:#a3cec0; 
+  
+    --highlight-color: rgba(255, 255, 255, 0.2);
+    --switch-bg-url: url("./img/moon-star.svg");
+    
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.1);
+    --surface-color-hover: rgba(3, 0, 0, 0.308);
+    
+    
+    --button-text-color-hover: #FFFFFF;
+    --button-color-hover: #265C4B;
+  
+    --border-form: none;
+    --bg-form: rgba(24, 24, 24, 0.726);
+  }
+  
+  .light {
+    --bg-color: #ffffff;
+    --second-bg-color: #03A63C;
+    
+    --text-color: #000000;
+    --second-text-color: #007566;
+    --card-bg-color: #265C4B;
+  
+    --highlight-color: rgba(0, 0, 0, 0.25);
+    --switch-bg-url: url("./img/sun.svg");
+    
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.1);
+    --surface-color-hover: rgba(3, 0, 0, 0.308);
+  
+  
+    --button-text-color-hover: #000000;
+  
+    --border-form: 2px solid rgb(98, 130, 103);
+    --bg-form: rgba(255, 255, 255, 0.726);
+  }
+  
+  body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--first-font);
+  }
+
+
+
+
 *{
-    color: #25282e
+    color: var(--second-text-color);
 }
 
 a, i{
@@ -8,7 +61,7 @@ a, i{
 }
 
 .secondary-color {
-    color: #555;
+    color: var(--terciary-bg-color);
 }
 
 .center-image{
@@ -18,14 +71,14 @@ a, i{
 
 .btn {
     text-decoration: none;
-    background-color: #25282e;
-    color: #fff;
+    background-color: var(--second-bg-color);
+    color: var(--button-text-color-hover);
     padding: 7px 18px;
-    border-radius: 0;
+    border-radius: 40px;
 }
 
 .btn:hover{
-    background-color: #333;
+    background-color: #007566;
     color: #fff;
 }
 
@@ -62,13 +115,13 @@ a, i{
 }
 
 #navbar a:hover{
-    color: #c1b696;
+    color: var(--second-text-color);
 }
 
 /* MAIN IMAGE */
 .main-image{
     height: 400px;
-    background-image: url('img/g_1.jpg');
+    background-image: url('../img/irmaos.jpg');
     margin-bottom: 30px;
     position: relative;
 }
@@ -83,23 +136,23 @@ a, i{
 
 /* GALLERY */
 #img-2{
-    background-image: url('../img/theodor.jpg');
+    background-image: url('../img/antigo.png');
 }
 
 #img-3{
-    background-image: url('img/g_2.jpg');
+    background-image: url('../img/season1.png');
 }
 
 #img-4{
-    background-image: url('img/g_2.jpg');
+    background-image: url('../img/theodorobonecos.jpg');
 }
 
 #img-5{
-    background-image: url('img/g_2.jpg');
+    background-image: url('../img/theodoretestemunha.jpg');
 }
 
 #img-6{
-    background-image: url('img/g_2.jpg');
+    background-image: url('../img/manipulador.avif');
 }
 
 #gallery-container h1{
@@ -142,5 +195,5 @@ footer p{
 }
 
 a:hover i{
-    color: #c1b696;
+    color: var(--second-bg-color);
 }
