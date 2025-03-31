@@ -151,7 +151,8 @@ a, i{
 }
 
 .main-image-info {
-    background-color: #fff;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     padding: 25px;
     position: absolute;
     left: 25px;
