@@ -1,9 +1,12 @@
 :root {
     --bg-color: #000000;
-    --second-bg-color: #03A63C;
+    --second-bg-color: #49A646;
     --text-color: #ffffff;
-    --second-text-color: #8dd8ce;
+    --second-text-color: #7ab387;
     --terciary-bg-color:#a3cec0; 
+
+    --icon-bg-color: #fff;
+    --img-logo: url('../img/microphone.png')
   
     --highlight-color: rgba(255, 255, 255, 0.2);
     --switch-bg-url: url("./img/moon-star.svg");
@@ -12,10 +15,12 @@
     --surface-color: rgba(255, 255, 255, 0.1);
     --surface-color-hover: rgba(3, 0, 0, 0.308);
     
+    --button-text-color: #ffffff;
+    --button-color: #5a8f7f;
+    --button-text-color-hover: #e0d5d5;
+    --button-color-hover: #3c7160;
+
     
-    --button-text-color-hover: #FFFFFF;
-    --button-color-hover: #265C4B;
-  
     --border-form: none;
     --bg-form: rgba(24, 24, 24, 0.726);
   }
@@ -27,6 +32,9 @@
     --text-color: #000000;
     --second-text-color: #007566;
     --card-bg-color: #265C4B;
+
+    --icon-bg-color: #000;
+    --img-logo: url('../img/microphone1.png')
   
     --highlight-color: rgba(0, 0, 0, 0.25);
     --switch-bg-url: url("./img/sun.svg");
@@ -55,13 +63,22 @@
     color: var(--second-text-color);
 }
 
+#theme-button{
+    border-radius: 50%;
+    border: none;
+    background-color: var(--icon-bg-color);
+}
+
+#logo{
+    background-image: var(--img-logo);
+}
 a, i{
     transition: .5s;
     text-decoration: none;
 }
 
 .secondary-color {
-    color: var(--terciary-bg-color);
+    color: var(--second-text-color);
 }
 
 .center-image{
@@ -71,15 +88,15 @@ a, i{
 
 .btn {
     text-decoration: none;
-    background-color: var(--second-bg-color);
-    color: var(--button-text-color-hover);
+    background-color: var(--button-color);
+    color: var(--button-text-color);
     padding: 7px 18px;
     border-radius: 40px;
 }
 
 .btn:hover{
-    background-color: #007566;
-    color: #fff;
+    background-color: var(--button-color-hover);
+    color: var(--button-text-color);
 }
 
 /* HEADER */
