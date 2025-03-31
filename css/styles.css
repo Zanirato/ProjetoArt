@@ -69,9 +69,15 @@
     background-color: var(--icon-bg-color);
 }
 
-#logo{
-    background-image: var(--img-logo);
+#logo {
+    background-image: url('../img/microphone.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 45px;
+    margin-right: 15px;
 }
+
+
 a, i{
     transition: .5s;
     text-decoration: none;
@@ -115,10 +121,7 @@ a, i{
     justify-content: center;
 }
 
-#logo{
-    width: 40px;
-    margin-right: 15px;
-}
+
 
 /* NAVBAR */
 #navbar{
@@ -128,12 +131,14 @@ a, i{
 
 #navbar a{
     width: 80px;
-    color: #444;
+    color: var(--text-color);
+    transition: color 0.3s ease-in-out;
 }
 
 #navbar a:hover{
     color: var(--second-text-color);
 }
+
 
 /* MAIN IMAGE */
 .main-image{
